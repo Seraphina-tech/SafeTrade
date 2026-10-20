@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F7FB">
+  <meta name="description" content="SafeTrade is a concept for a smart connected welding-safety helmet. Sense. Alert. Protect.">
+  <title>SafeTrade — Sense. Alert. Protect.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="SafeTrade home">
+        <img class="brand-logo" src="assets/images/logo/logo.jpeg" alt="SafeTrade — Smart Welding Safety">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#engineering">Engineering</a><a href="#impact">Impact</a><a href="#case-study">Case study</a><a href="#team">Team</a><a href="#mentor">Mentors</a>
+        <a class="nav-cta" href="#simulation">Explore concept <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-dark" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="status-dot"></span> SMART INDIA HACKATHON 2026 <span class="eyebrow-divider">/</span> TEAM ABACUS</p>
+          <h1>Safety that<br>thinks <span class="text-cyan">ahead.</span></h1>
+          <p class="hero-subtitle">Smart Connected Safety Helmet<br>for Welding Trades</p>
+          <p class="hero-description">A connected safety concept designed to sense the work environment, alert locally, and make meaningful information available beyond the workshop floor.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#solution">Discover SafeTrade <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#engineering"><span class="play-icon" aria-hidden="true">▶</span> Explore the system</a></div>
+          <div class="hero-tagline"><span class="tagline-line"></span> SENSE. ALERT. PROTECT.</div>
+        </div>
+        <div class="hero-art-wrap" data-reveal data-delay="150">
+          <div class="art-caption"><span class="live-pip"></span> CONCEPT VISUALIZATION <span class="caption-code">ST / 01</span></div>
+          <div class="hero-art">
+            <img class="helmet-svg" src="assets/images/hero/hero.jpeg" alt="Concept visualization of a connected welding helmet. This illustration is not a photograph of a tested SafeTrade prototype." fetchpriority="high">
+            <span class="hero-sensor-tag tag-one">ENVIRONMENT INPUTS</span>
+            <span class="hero-sensor-tag tag-two">LOCAL FEEDBACK</span>
+          </div>
+          <div class="art-footer"><span>SMART CONNECTED SAFETY</span><span>FIG. 01 <i></i> CONCEPT ONLY</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>01 — 08</span><span class="hero-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span><span class="hero-bottom-right">INDUSTRIAL SAFETY / CONNECTED SYSTEMS</span></div>
+    </section>
+
+    <section class="section section-problem" id="problem">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="problem-visual panel" data-reveal>
+            <img src="assets/images/problem/problem.jpeg" alt="Illustrative welding-workshop hazards infographic showing a protected welder, fumes, UV and IR exposure, heat, and workshop conditions; illustrative context, not a SafeTrade test photograph.">
+            <p class="visual-note"><span class="note-mark">i</span> Illustrative workshop visual — not a documented SafeTrade test environment.</p>
+          </div>
+          <div class="problem-points" data-reveal data-delay="100">
+            <div class="problem-heading">
+              <p class="eyebrow"><span>01</span> / THE CHALLENGE</p>
+              <h2>Safety is personal.<br><span class="text-muted">Risk is not.</span></h2>
+              <p class="section-intro">A welding workday can bring changing conditions and competing demands for attention. Safety depends on protective equipment, awareness, and established procedures working together.</p>
+            </div>
+            <article class="insight-row"><span class="insight-number">01</span><div><h3>Conditions can shift</h3><p>Air, light, heat, and movement are part of the welding environment.</p></div></article>
+            <article class="insight-row"><span class="insight-number">02</span><div><h3>Attention is already busy</h3><p>Welding requires concentration, so useful warnings should be clear and local rather than distracting.</p></div></article>
+            <article class="insight-row"><span class="insight-number">03</span><div><h3>Connectivity is not guaranteed</h3><p>The design should distinguish local alerts from remote monitoring.</p></div></article>
+            <div class="problem-footnote"><span class="orange-rule"></span> A DESIGN CHALLENGE — NOT A CLAIM OF MEASURED OUTCOMES.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-solution" id="solution">
+      <div class="container">
+        <div class="solution-layout">
+          <figure class="solution-visual panel" data-reveal>
+            <div class="solution-photo">
+              <img src="assets/images/solution/solution.jpeg" alt="Illustrative smart welding helmet concept annotated with possible sensor and alert categories. Labels and positions are conceptual, not finalized hardware." loading="lazy">
+            </div>
+            <figcaption><span>SAFETRADE / CONCEPT VISUALIZATION</span><span>NOT A TESTED PROTOTYPE</span></figcaption>
+          </figure>
+          <div class="solution-copy" data-reveal data-delay="100">
+            <p class="eyebrow"><span>02</span> / OUR SOLUTION</p>
+            <h2>A connected concept.<br><span class="text-muted">Designed around the welder.</span></h2>
+            <p class="section-intro">SafeTrade explores how sensing, immediate local feedback, and optional gateway monitoring could work together. Select a capability to explore its proposed role.</p>
+            <div class="sensor-controls" role="group" aria-label="Explore proposed SafeTrade capabilities">
+              <button class="sensor-button is-active" type="button" data-sensor="pm25" aria-pressed="true"><span class="sensor-symbol">01</span><span>PM2.5 monitoring</span></button>
+              <button class="sensor-button" type="button" data-sensor="uv" aria-pressed="false"><span class="sensor-symbol">02</span><span>UV and IR sensing</span></button>
+              <button class="sensor-button" type="button" data-sensor="temperature" aria-pressed="false"><span class="sensor-symbol">03</span><span>Temperature monitoring</span></button>
+              <button class="sensor-button" type="button" data-sensor="imu" aria-pressed="false"><span class="sensor-symbol">04</span><span>Fall / motion event concept</span></button>
+              <button class="sensor-button" type="button" data-sensor="wear" aria-pressed="false"><span class="sensor-symbol">05</span><span>Helmet-wear detection</span></button>
+              <button class="sensor-button" type="button" data-sensor="alerts" aria-pressed="false"><span class="sensor-symbol">06</span><span>Local LED, vibration, buzzer</span></button>
+            </div>
+            <div class="sensor-detail" aria-live="polite" aria-atomic="true"><span class="detail-index">CAPABILITY / 01</span><h3 id="sensor-title">PM2.5 monitoring</h3><p id="sensor-description">A proposed particulate input could provide environmental context. It does not establish exposure safety or validated detection.</p><span class="detail-disclaimer">CONCEPT CAPABILITIES ONLY — NOT CONNECTED TO ACTUAL SENSORS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-engineering" id="engineering">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal><div><p class="eyebrow"><span>03</span> / ENGINEERING &amp; WORKFLOW</p><h2>Local by design.<br><span class="text-muted">Connected when possible.</span></h2></div><p class="section-intro">An illustrative architecture separates immediate helmet feedback from gateway-based monitoring. Select a path to follow the flow.</p></div>
+        <div class="components-visual panel" data-reveal>
+          <div class="panel-label">CONCEPT SYSTEM OVERVIEW <span>ILLUSTRATIVE — NOT ASSEMBLED HARDWARE</span></div>
+          <div class="concept-scroll" tabindex="0" aria-label="Scrollable conceptual helmet and component overview">
+            <img src="assets/images/engineering/system-concept.svg" alt="Concept system visualization showing a welding helmet and sensing inputs connected conceptually to an ESP32-S3 controller, separate local alert devices, and an ESP-NOW gateway path. Exact sensor placement and hardware assembly are not specified.">
+          </div>
+          <p class="concept-scroll-hint">← Scroll the concept overview on small screens →</p>
+        </div>
+        <div class="architecture panel" data-reveal>
+          <div class="architecture-top"><div class="panel-label">SYSTEM ARCHITECTURE <span>CONCEPT DIAGRAM / NOT A BUILD SPECIFICATION</span></div>
+            <div class="path-controls" role="group" aria-label="Highlight architecture path"><button type="button" class="path-button is-active" data-path="all" aria-pressed="true">Show Complete System</button><button type="button" class="path-button" data-path="local" aria-pressed="false">Highlight Local Alerts</button><button type="button" class="path-button" data-path="connected" aria-pressed="false">Highlight Connected Monitoring</button></div>
+          </div>
+          <div class="diagram-scroll" tabindex="0" aria-label="Scrollable system architecture diagram">
+            <svg class="architecture-svg" viewBox="0 0 1100 350" role="img" aria-labelledby="architecture-title architecture-desc">
+              <title id="architecture-title">SafeTrade illustrative system architecture</title><desc id="architecture-desc">Sensors connect to an ESP32-S3. It branches to local LED, vibration motor, and buzzer alerts, and to ESP-NOW, a nearby ESP32 or Raspberry Pi gateway, SQLite storage, and a web dashboard.</desc>
+              <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#25d9f8" stroke-width="1.3"/></marker></defs>
+              <g class="diagram-path diagram-sensors architecture-node" data-group="connected local" data-node="sensors" tabindex="0" role="button" aria-pressed="false" aria-label="Sensors. Select to read a description.">
+                <rect class="node node-sensor" x="20" y="108" width="158" height="112" rx="8"/><text class="node-kicker" x="39" y="132">INPUTS / CONCEPT</text><text class="node-title" x="39" y="161">Sensors</text><text class="node-copy" x="39" y="184">PM · UV · IR · temp</text><text class="node-copy" x="39" y="201">IMU · helmet wear</text>
+              </g>
+              <path class="connector diagram-path" data-group="connected local" d="M178 164h58" marker-end="url(#arrow)"/>
+              <g class="diagram-path diagram-node architecture-node" data-group="connected local" data-node="controller" tabindex="0" role="button" aria-pressed="false" aria-label="ESP32-S3 controller. Select to read a description."><rect class="node node-core" x="240" y="108" width="168" height="112" rx="8"/><text class="node-kicker" x="260" y="132">PROCESSING</text><text class="node-title" x="260" y="161">ESP32-S3</text><text class="node-copy" x="260" y="184">Concept controller</text><text class="node-copy" x="260" y="201">local decision path</text></g>
+              <path class="connector diagram-path" data-group="local" d="M408 164h44v-83h35" marker-end="url(#arrow)"/>
+              <g class="diagram-path architecture-node" data-group="local" data-node="local" tabindex="0" role="button" aria-pressed="false" aria-label="Local alerts. Select to read a description."><rect class="node node-local" x="490" y="27" width="150" height="109" rx="8"/><text class="node-kicker" x="510" y="51">LOCAL ALERTS</text><text class="node-title small-node-title" x="510" y="80">LED</text><text class="node-copy" x="510" y="102">Vibration motor</text><text class="node-copy" x="510" y="119">Buzzer</text></g>
+              <path class="connector diagram-path" data-group="connected" d="M408 164h44v0h35" marker-end="url(#arrow)"/>
+              <g class="diagram-path architecture-node" data-group="connected" data-node="espnow" tabindex="0" role="button" aria-pressed="false" aria-label="ESP-NOW device link. Select to read a description."><rect class="node node-link" x="490" y="144" width="150" height="105" rx="8"/><text class="node-kicker" x="510" y="168">DEVICE LINK</text><text class="node-title small-node-title" x="510" y="197">ESP-NOW</text><text class="node-copy" x="510" y="220">Nearby link only</text></g>
+              <path class="connector diagram-path" data-group="connected" d="M640 196h40" marker-end="url(#arrow)"/>
+              <g class="diagram-path architecture-node" data-group="connected" data-node="gateway" tabindex="0" role="button" aria-pressed="false" aria-label="Nearby gateway. Select to read a description."><rect class="node" x="686" y="144" width="168" height="105" rx="8"/><text class="node-kicker" x="706" y="168">NEARBY GATEWAY</text><text class="node-title small-node-title" x="706" y="197">Gateway</text><text class="node-copy" x="706" y="220">ESP32 or Raspberry Pi</text></g>
+              <path class="connector diagram-path" data-group="connected" d="M854 196h37" marker-end="url(#arrow)"/>
+              <g class="diagram-path architecture-node" data-group="connected" data-node="storage" tabindex="0" role="button" aria-pressed="false" aria-label="SQLite local storage. Select to read a description."><rect class="node" x="897" y="144" width="88" height="105" rx="8"/><text class="node-kicker" x="913" y="168">STORAGE</text><text class="node-title small-node-title" x="913" y="197">SQLite</text><text class="node-copy" x="913" y="220">Local records</text></g>
+              <path class="connector diagram-path" data-group="connected" d="M985 196h35v80h-48" marker-end="url(#arrow)"/>
+              <g class="diagram-path architecture-node" data-group="connected" data-node="dashboard" tabindex="0" role="button" aria-pressed="false" aria-label="Supervisor dashboard. Select to read a description."><rect class="node node-dashboard" x="818" y="274" width="154" height="60" rx="8"/><text class="node-kicker" x="838" y="297">WEB VIEW</text><text class="node-title small-node-title" x="838" y="320">Dashboard</text></g>
+              <path d="M710 263v28h-68" fill="none" stroke="#ff8a32" stroke-dasharray="5 5" stroke-width="1.5"/><text class="diagram-note" x="494" y="286">INTERNET CONNECTION IS AT THE GATEWAY — SEPARATE FROM ESP-NOW</text>
+              <text class="diagram-edge-note" x="24" y="251">SENSING</text><text class="diagram-edge-note" x="244" y="251">LOCAL COMPUTE</text><text class="diagram-edge-note" x="492" y="343">OPTIONAL REMOTE MONITORING PATH</text>
+            </svg>
+          </div>
+          <div class="architecture-detail" aria-live="polite" aria-atomic="true"><span id="architecture-node-type">SELECT A SYSTEM NODE</span><h3 id="architecture-node-title">Explore the concept</h3><p id="architecture-node-copy">Choose a labeled node in the diagram to see its proposed role. Sensor positions and hardware assembly are not specified.</p></div>
+          <div class="diagram-legend"><span><i class="legend-cyan"></i> Concept data path</span><span><i class="legend-orange"></i> Gateway internet boundary</span><span>← Scroll diagram on small screens →</span></div>
+        </div>
+        <div class="workflow-layout">
+          <div class="workflow panel" data-reveal>
+            <div class="panel-label">FIVE-STAGE WORKFLOW <span>SELECT A STAGE</span></div>
+            <div class="workflow-steps" role="tablist" aria-label="SafeTrade workflow">
+              <button class="workflow-step is-active" type="button" role="tab" aria-selected="true" data-step="0"><span>01</span>Sense</button>
+              <button class="workflow-step" type="button" role="tab" aria-selected="false" data-step="1"><span>02</span>Process</button>
+              <button class="workflow-step" type="button" role="tab" aria-selected="false" data-step="2"><span>03</span>Alert</button>
+              <button class="workflow-step" type="button" role="tab" aria-selected="false" data-step="3"><span>04</span>Communicate</button>
+              <button class="workflow-step" type="button" role="tab" aria-selected="false" data-step="4"><span>05</span>Monitor</button>
+            </div>
+            <div class="workflow-explanation" aria-live="polite"><span id="workflow-counter">STAGE 01 / 05</span><h3 id="workflow-title">Sense the context</h3><p id="workflow-description">Concept sensor inputs represent environmental conditions, movement, and helmet wear for exploration.</p></div>
+          </div>
+          <aside class="workflow-note" data-reveal data-delay="100"><span class="note-icon">⌁</span><h3>Two different links.</h3><p><strong>ESP-NOW</strong> is shown as the local device-to-gateway link. The gateway uses its own internet connection for any remote dashboard access.</p><div class="note-divider"></div><p>Local alerts are designed to remain conceptually separate from remote availability.</p></aside>
+        </div>
+        <div class="technology-stack panel" data-reveal>
+          <div class="technology-heading"><div><span class="technology-kicker">PROPOSED TECHNOLOGY STACK</span><h3>Concept specification</h3></div><span class="technology-note">Illustrative architecture · not validated hardware</span></div>
+          <dl class="technology-grid">
+            <div><dt>Controller</dt><dd>ESP32-S3</dd></div>
+            <div><dt>Sensor inputs</dt><dd>UV · IR · PM2.5 · temperature · IMU · helmet wear</dd></div>
+            <div><dt>Local alerts</dt><dd>LED · vibration motor · buzzer</dd></div>
+            <div><dt>Wireless link</dt><dd>ESP-NOW</dd></div>
+            <div><dt>Gateway</dt><dd>ESP32 or Raspberry Pi</dd></div>
+            <div><dt>Local storage</dt><dd>SQLite</dd></div>
+            <div><dt>Interface</dt><dd>Web-based supervisor dashboard</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-simulation" id="simulation">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal><div><p class="eyebrow"><span>04</span> / CONCEPT SIMULATION</p><h2>Explore the logic.<br><span class="text-muted">Not real hardware.</span></h2></div><p class="section-intro">Adjust illustrative inputs and thresholds to see a browser-only example of sensor comparison, local feedback, and a gateway event.</p></div>
+        <div class="simulation-warning"><span class="warning-icon">!</span><strong>CONCEPT SIMULATION — NOT CONNECTED TO REAL HARDWARE</strong><span>All values and thresholds are illustrative examples only.</span></div>
+        <div class="simulator panel" data-reveal>
+          <div class="simulator-controls">
+            <div class="simulator-heading"><span class="sim-kicker">SIMULATION INPUTS</span><h3>Set example values</h3><p>These controls do not read sensors or determine actual safety.</p></div>
+            <form id="simulation-form" novalidate>
+              <div class="sim-input-grid">
+                <label class="sim-field"><span>PM2.5 <small>illustrative units</small></span><input type="number" name="pm25" value="18" min="0" max="1000" step="1" required><span class="threshold-label">Example threshold <input type="number" name="pm25Threshold" value="35" min="0" max="1000" step="1" required></span></label>
+                <label class="sim-field"><span>Temperature <small>°C · illustrative</small></span><input type="number" name="temperature" value="28" min="-50" max="200" step="1" required><span class="threshold-label">Example threshold <input type="number" name="temperatureThreshold" value="40" min="-50" max="200" step="1" required></span></label>
+                <label class="sim-field"><span>UV index <small>illustrative scale</small></span><input type="number" name="uv" value="2" min="0" max="100" step="1" required><span class="threshold-label">Example threshold <input type="number" name="uvThreshold" value="6" min="0" max="100" step="1" required></span></label>
+                <label class="sim-field sim-select-field"><span>Helmet wear <small>illustrative state</small></span><select name="worn"><option value="yes" selected>Worn</option><option value="no">Not worn</option></select><span class="threshold-label">State comparison <b>Worn = expected</b></span></label>
+              </div>
+              <div class="sim-actions"><button class="button button-primary" type="submit">Run demonstration <span aria-hidden="true">→</span></button><button class="button button-quiet" id="reset-simulation" type="button">Reset example</button><span class="sim-validation" id="sim-validation" role="alert"></span></div>
+            </form>
+          </div>
+          <div class="sim-output">
+            <div class="panel-label">ILLUSTRATIVE SYSTEM OUTPUT <span id="simulation-state" class="sim-state">AWAITING DEMONSTRATION</span></div>
+            <div class="sim-flow">
+              <div class="sim-stage"><span class="sim-stage-icon">⌁</span><span class="sim-stage-label">INPUTS</span><strong id="sim-input-summary">Example values ready</strong><small>editable · illustrative only</small></div>
+              <span class="sim-connector">→</span>
+              <div class="sim-stage"><span class="sim-stage-icon">⌘</span><span class="sim-stage-label">ESP32-S3</span><strong id="sim-process-summary">Waiting to compare</strong><small>example logic only</small></div>
+              <span class="sim-connector">→</span>
+              <div class="sim-stage sim-alert-stage" id="local-alert-stage"><span class="sim-stage-icon">◉</span><span class="sim-stage-label">LOCAL ALERT</span><strong id="sim-alert-summary">No demo run</strong><small>LED · vibration · buzzer</small></div>
+            </div>
+            <div class="gateway-event"><div><span class="event-mark"></span><span class="sim-stage-label">EXAMPLE GATEWAY EVENT</span></div><p id="gateway-event-text">Run the demonstration to create a sample event. No data leaves this browser.</p><span id="gateway-event-time" class="event-time">LOCAL PREVIEW ONLY</span></div>
+            <p class="sim-footnote">This demonstration uses configurable example comparisons only. It is not validated detection, advice, or a substitute for proper protective equipment and procedures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-impact" id="impact">
+      <div class="container">
+        <div class="section-heading centered-heading" data-reveal><p class="eyebrow"><span>05</span> / IMPACT &amp; SAFETY</p><h2>Designed to support.<br><span class="text-muted">Never to replace.</span></h2><p class="section-intro">A thoughtful connected system can be useful without assuming constant connectivity or overstating what a concept can do.</p></div>
+        <div class="impact-grid">
+          <article class="impact-card impact-primary" data-reveal><span class="impact-number">01</span><span class="impact-icon">⌁</span><h3>Local-first awareness</h3><p>Proposed on-helmet feedback is conceptually available at the wearer, without relying on a remote dashboard.</p><span class="impact-tag">LOCAL FEEDBACK CONCEPT</span></article>
+          <article class="impact-card" data-reveal data-delay="80"><span class="impact-number">02</span><span class="impact-icon">▤</span><h3>Optional workshop visibility</h3><p>A nearby gateway could collect example records for a local view when the monitoring path is available.</p><span class="impact-tag">GATEWAY-DEPENDENT</span></article>
+          <article class="impact-card" data-reveal data-delay="160"><span class="impact-number">03</span><span class="impact-icon">↻</span><h3>Offline-aware design</h3><p>Gateway records may be queued locally and forwarded when the gateway's internet connection returns.</p><span class="impact-tag">PROPOSED BEHAVIOR</span></article>
+        </div>
+        <div class="offline-band" data-reveal><div class="offline-symbol"><span></span><span></span><span></span></div><div><span class="offline-label">OFFLINE-FIRST DEMONSTRATION</span><p>Local alert concepts remain distinct from remote monitoring. ESP-NOW carries a nearby link to the gateway; it is not the gateway's internet connection. If internet is unavailable, the gateway may retain records locally for later forwarding.</p><div class="connectivity-demo"><button class="connectivity-toggle" id="connectivity-toggle" type="button" aria-pressed="true">Simulate internet: available</button><span id="connectivity-status" aria-live="polite">Gateway view available · no sample events queued.</span></div></div><div class="offline-state"><span class="offline-indicator"></span> INTERNET OPTIONAL<br><small>FOR LOCAL FEEDBACK CONCEPT</small></div></div>
+        <div class="safety-disclaimer"><span class="disclaimer-icon">!</span><p>SafeTrade is intended to supplement certified protective equipment and established welding-safety procedures, not replace them.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-case" id="case-study">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal><div><p class="eyebrow"><span>06</span> / CASE STUDY</p><h2>Grounded in the<br><span class="text-muted">workshop context.</span></h2></div><p class="section-intro">A workshop visit can help shape design questions and keep a concept connected to real working environments.</p></div>
+        <div class="case-grid">
+          <div class="case-image panel" data-reveal>
+            <div class="case-image-top"><span>WORKSHOP VISIT</span><span>CONTEXT / NOT VALIDATION</span></div>
+            <div class="case-photo"><img src="assets/images/case-study/case-study.jpeg" alt="Photograph from a welding workshop visit showing team members speaking with a workshop instructor; shown as visit context, not prototype testing"></div>
+            <p class="case-image-note">Project-supplied workshop-visit photograph. It documents context only, not a SafeTrade prototype test.</p>
+          </div>
+          <div class="case-copy" data-reveal data-delay="100"><span class="case-kicker">OBSERVATION → DESIGN QUESTION</span><h3>Listen first.<br>Design with context.</h3><p class="case-lead">The visit provides context for asking better questions about protective gear, attention, and how information might be useful on the shop floor.</p>
+            <div class="case-observation"><span>01</span><div><strong>Workshop observations</strong><p>Use this space for factual, documented observations from the visit.</p></div></div>
+            <div class="case-observation"><span>02</span><div><strong>Connection to SafeTrade</strong><p>Relate confirmed observations to design considerations—without implying validated performance.</p></div></div>
+            <div class="case-outcome"><span class="outcome-mark">↗</span><div><strong>Outcome</strong><p>Context for concept development only. The visit does not establish prototype testing or validation.</p></div></div>
+          </div>
+        </div>
+        <p class="case-caption"><span>CASE STUDY / VISIT CONTEXT</span><span>NO PROTOTYPE TESTING OR VALIDATION CLAIMED</span></p>
+      </div>
+    </section>
+
+    <section class="section section-team" id="team">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal><div><p class="eyebrow"><span>07</span> / OUR TEAM</p><h2>Meet <span class="text-cyan">Team Abacus</span></h2></div><p class="section-intro">The team behind the SafeTrade smart connected safety helmet concept.</p></div>
+        <div class="team-roster" data-reveal>
+          <article class="profile-card profile-leader">
+            <div class="profile-image portrait-contain"><img src="assets/images/team/om-prakash-mandal.jpeg" alt="Om Prakash Mandal"><span class="profile-index">01</span></div>
+            <div class="profile-details"><span class="profile-leader-badge">TEAM LEADER</span><h3 class="profile-name">Om Prakash Mandal</h3><p class="profile-role">Team Leader &amp; System Integration</p></div>
+          </article>
+          <div class="team-grid team-row team-row-three">
+            <article class="profile-card"><div class="profile-image portrait-contain"><img src="assets/images/team/anusha-karki.jpeg" alt="Anusha Karki"><span class="profile-index">02</span></div><div class="profile-details"><h3 class="profile-name">Anusha Karki</h3><p class="profile-role">Web Development &amp; Dashboard Design</p></div></article>
+            <article class="profile-card"><div class="profile-image portrait-contain"><img src="assets/images/team/ashish-kumar-shah-gupta.jpeg" alt="Ashish Kumar Shah Gupta"><span class="profile-index">03</span></div><div class="profile-details"><h3 class="profile-name">Ashish Kumar Shah Gupta</h3><p class="profile-role">Research &amp; Documentation</p></div></article>
+            <article class="profile-card"><div class="profile-image portrait-contain"><img src="assets/images/team/laxman-chaudary.jpeg" alt="Laxman Chaudhary"><span class="profile-index">04</span></div><div class="profile-details"><h3 class="profile-name">Laxman Chaudhary</h3><p class="profile-role">Safety Analysis &amp; Testing</p></div></article>
+          </div>
+          <div class="team-grid team-row team-row-two">
+            <article class="profile-card"><div class="profile-image portrait-contain"><img src="assets/images/team/priuthvi-saran-a.jpeg" alt="Piruthvi Saran A"><span class="profile-index">05</span></div><div class="profile-details"><h3 class="profile-name">Piruthvi Saran A</h3><p class="profile-role">Sensor Integration &amp; Embedded Systems</p></div></article>
+            <article class="profile-card"><div class="profile-image portrait-contain"><img src="assets/images/team/mukesh-m.jpg" alt="Mukesh M"><span class="profile-index">06</span></div><div class="profile-details"><h3 class="profile-name">Mukesh M</h3><p class="profile-role">Helmet Mechanical Design &amp; Hardware Assembly</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mentor" id="mentor">
+      <div class="container">
+        <div class="section-heading split-heading" data-reveal><div><p class="eyebrow"><span>08</span> / OUR MENTORS</p><h2>Guided by <span class="text-muted">experience.</span></h2></div><p class="section-intro">We are grateful for the guidance supporting the SafeTrade concept and its development.</p></div>
+        <div class="mentor-grid" data-reveal>
+          <article class="mentor-profile">
+            <div class="mentor-photo"><img src="assets/images/mentor/gajendran-parthasarathi.jpeg" alt="Er. Gajendran Parthasarathi" loading="lazy"></div>
+            <div class="mentor-info"><span class="mentor-badge">PROJECT MENTOR</span><h3>Er. Gajendran Parthasarathi</h3><p class="mentor-designation">Head – School of Design and Innovation</p><p class="mentor-institution">Rathinam Technical Campus</p></div>
+          </article>
+          <article class="mentor-profile">
+            <div class="mentor-photo"><img src="assets/images/mentor/k-muthusamy.jpeg" alt="Mr. K. Muthusamy" loading="lazy"></div>
+            <div class="mentor-info"><span class="mentor-badge">TECHNICAL MENTOR</span><h3>Mr. K. Muthusamy</h3><p class="mentor-designation">Head – Technical Competitions and Hackathons</p><p class="mentor-institution">Rathinam Technical Campus</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3 27 9v14l-11 6L5 23V9l11-6Z"/><path d="m11 16 3.2 3.2L21.5 12"/></svg></span><span>SAFE<span class="brand-accent">TRADE</span></span></a><p>Sense. Alert. Protect.<br><span>A connected safety concept for welding trades.</span></p><a class="back-top" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+    <div class="container footer-bottom"><span>TEAM ABACUS · SMART INDIA HACKATHON 2026</span><span>CONCEPT WEBSITE · NOT A CERTIFIED SAFETY DEVICE</span></div>
+  </footer>
+</body>
+</html>

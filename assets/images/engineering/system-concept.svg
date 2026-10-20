@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 350" role="img" aria-labelledby="title desc">
+  <title id="title">SafeTrade conceptual helmet and connected system overview</title>
+  <desc id="desc">Illustrative helmet form with a grouped list of sensor inputs, a conceptual ESP32-S3 controller, local alert outputs, and an ESP-NOW gateway pathway. It does not specify sensor placement, wiring, or a tested prototype.</desc>
+  <defs>
+    <linearGradient id="helmet-shell" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#dce8f4"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#405976"/>
+      <stop offset="1" stop-color="#1c304a"/>
+    </linearGradient>
+    <linearGradient id="controller" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eaf3ff"/>
+      <stop offset="1" stop-color="#d9e8f8"/>
+    </linearGradient>
+    <filter id="shadow" x="-.15" y="-.2" width="1.3" height="1.5">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#294764" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 6 3 0 6" fill="none" stroke="#608fc8" stroke-width="1.4"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .caption { fill: #6b8098; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+      .title { fill: #223d5e; font-size: 19px; font-weight: 700; }
+      .copy { fill: #5c718a; font-size: 13px; }
+      .small { fill: #74879d; font-size: 11px; }
+      .flow { fill: none; stroke: #6696cf; stroke-width: 2; stroke-dasharray: 7 7; animation: flow 2.6s linear infinite; }
+      .flow-local { stroke: #e99553; }
+      @keyframes flow { to { stroke-dashoffset: -28; } }
+      @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+    </style>
+  </defs>
+  <rect width="1280" height="350" rx="18" fill="#f8fafd"/>
+  <text class="caption" x="25" y="31">CONCEPTUAL SYSTEM VIEW</text>
+  <text class="small" x="1255" y="31" text-anchor="end">Grouped components · exact placements and assembly are not specified</text>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="52" width="262" height="260" rx="15" fill="#fff" stroke="#dce6f0" stroke-width="2"/>
+    <text class="caption" x="43" y="78">WEARABLE CONCEPT</text>
+    <path d="M70 157c6-43 37-67 84-67s78 24 84 67l10 48c4 17-6 32-22 37l-24 7-17 34h-62l-17-34-24-7c-16-5-26-20-22-37l10-48Z" fill="url(#helmet-shell)" stroke="#a8bbcf" stroke-width="3"/>
+    <path d="M57 166c27-16 60-24 97-24s70 8 97 24l-10 43c-23 11-52 17-87 17s-64-6-87-17l-10-43Z" fill="url(#visor)" stroke="#7a91ab" stroke-width="3"/>
+    <path d="M70 171c25-10 53-15 84-15s59 5 84 15" fill="none" stroke="#a9e2eb" stroke-width="2" opacity=".75"/>
+    <circle cx="84" cy="173" r="5" fill="#316ac5" stroke="#fff" stroke-width="2"/>
+    <circle cx="196" cy="173" r="5" fill="#25bfd8" stroke="#fff" stroke-width="2"/>
+    <circle cx="154" cy="108" r="5" fill="#ff8a32" stroke="#fff" stroke-width="2"/>
+    <text class="small" x="155" y="291" text-anchor="middle">Sensor detail is conceptual</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="307" y="52" width="255" height="260" rx="15" fill="#fff" stroke="#dce6f0" stroke-width="2"/>
+    <text class="caption" x="328" y="78">SENSOR INPUTS</text>
+    <text class="title" x="328" y="111">Environmental + context</text>
+    <g fill="#edf4fc" stroke="#d5e2f0">
+      <rect x="328" y="132" width="94" height="37" rx="9"/>
+      <rect x="433" y="132" width="94" height="37" rx="9"/>
+      <rect x="328" y="179" width="94" height="37" rx="9"/>
+      <rect x="433" y="179" width="94" height="37" rx="9"/>
+      <rect x="328" y="226" width="94" height="37" rx="9"/>
+      <rect x="433" y="226" width="94" height="37" rx="9"/>
+    </g>
+    <g fill="#315578" font-size="12" font-weight="600" text-anchor="middle">
+      <text x="375" y="156">PM2.5</text>
+      <text x="480" y="156">UV</text>
+      <text x="375" y="203">IR</text>
+      <text x="480" y="203">Temperature</text>
+      <text x="375" y="250">IMU</text>
+      <text x="480" y="250">Helmet wear</text>
+    </g>
+    <text class="small" x="434" y="291" text-anchor="middle">Illustrative inputs · no specifications implied</text>
+  </g>
+
+  <path class="flow" d="M286 181h20" marker-end="url(#arrow)"/>
+  <path class="flow" d="M562 181h29" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="598" y="111" width="188" height="141" rx="15" fill="url(#controller)" stroke="#8eafd5" stroke-width="2"/>
+    <text class="caption" x="692" y="139" text-anchor="middle">PROPOSED CONTROLLER</text>
+    <rect x="632" y="155" width="120" height="54" rx="9" fill="#314d6d"/>
+    <text x="692" y="189" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">ESP32-S3</text>
+    <text class="small" x="692" y="232" text-anchor="middle">Local processing concept</text>
+  </g>
+
+  <path class="flow flow-local" d="M786 160h31v-54h20" marker-end="url(#arrow)"/>
+  <path class="flow" d="M786 205h31v57h20" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="847" y="52" width="190" height="111" rx="15" fill="#fff8f1" stroke="#efc7a7" stroke-width="2"/>
+    <text class="caption" x="866" y="78">LOCAL FEEDBACK</text>
+    <text class="title" x="866" y="106">LED indicators</text>
+    <text class="copy" x="866" y="130">Vibration motor · buzzer</text>
+    <text class="small" x="866" y="149">Separate from remote access</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="847" y="193" width="190" height="119" rx="15" fill="#f0f7fc" stroke="#c9dce9" stroke-width="2"/>
+    <text class="caption" x="866" y="219">CONNECTED PATH</text>
+    <text class="title" x="866" y="248">ESP-NOW</text>
+    <text class="copy" x="866" y="270">Nearby gateway link</text>
+    <text class="small" x="866" y="292">Not the internet connection</text>
+  </g>
+
+  <path class="flow" d="M1037 253h28" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="1071" y="193" width="184" height="119" rx="15" fill="#fff" stroke="#dce6f0" stroke-width="2"/>
+    <text class="caption" x="1088" y="219">GATEWAY</text>
+    <text class="title" x="1088" y="248" font-size="16">ESP32 or Pi</text>
+    <text class="copy" x="1088" y="270">SQLite · dashboard</text>
+    <text class="small" x="1088" y="292">Local records, view when available</text>
+  </g>
+
+  <text class="small" x="640" y="333" text-anchor="middle">Conceptual information flow only · not a wiring diagram, physical layout, or tested prototype</text>
+</svg>
